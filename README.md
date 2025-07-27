@@ -1,59 +1,54 @@
-# ProductsGallery
+# 🛍️ Products Gallery Web Application (Angular)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
+## 🎯 Project Overview
+A fully functional and responsive **Products Gallery Web Application** built using **Angular 16+** and the **Fake Store API**. The app allows users to browse, search, sort, and view detailed product information. It also includes UI enhancements like dark mode and rating display.
 
-## Development server
 
-To start a local development server, run:
+## 🌐 Live Demo
+[🔗 Click here to view the demo](https://your-live-demo-link.com)
 
-```bash
-ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+## 🧱 Tech Stack Used
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+| Tech | Description |
+| [Angular 16+](https://angular.io/) | Frontend Framework |
+| [Tailwind CSS](https://tailwindcss.com/) | Styling & Responsive Design |
+| [Fake Store API](https://fakestoreapi.com/) | External Data Source |
 
-```bash
-ng generate component component-name
-```
+## ✨ Features
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- ✅ Fetch products from API with loading spinner and error fallback
+- ✅ Product Cards (Name, Image)
+- ✅ Search filter (case-insensitive)
+- ✅ Sorting:
+  - Price: Low to High / High to Low
+  - Name: A–Z
+- ✅ Dynamic Routing for product details page `/products/:id`
+- ✅ Display product full details:
+  - Name
+  - Description
+  - Image
+  - Price (formatted as currency)
+  - Category
+  - ⭐ Rating
+- ✅ Responsive design (mobile-first)
+- ✅ Dark mode toggle
 
-```bash
-ng generate --help
-```
 
-## Building
+## 🧾 Pages & Components
 
-To build the project run:
+### 🏠 Products Page (`/products`)
+- Fetches data from `https://fakestoreapi.com/products`
+- Displays product cards
+- Includes:
+  - Search bar
+  - Sort dropdown
 
-```bash
-ng build
-```
+### 📄 Product Details Page (`/products/:id`)
+- Displays detailed product info:
+  - Title, Description, Price, Category, Image, Rating
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
